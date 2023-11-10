@@ -175,7 +175,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary);
+  background:#00a88400;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -184,12 +184,12 @@ section {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--color-secondary);
+  color: #00a884;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #00a8842f;
   color: #fff;
 }
 
@@ -1098,9 +1098,11 @@ section {
 # Alt Services Section
 --------------------------------------------------------------*/
 .alt-services .img-bg {
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
   background-position: center center;
   min-height: 400px;
+  max-height: 100%;
 }
 
 .alt-services h3 {
@@ -2674,4 +2676,13 @@ section {
 .social-links :hover{
   color: var(--color-secondary);
   background-color: var(--color-primary);
+}
+
+.hover-zoom .card-bg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover .card-bg {
+  transform: scale(1.2);
+    z-index: 1;
 }
