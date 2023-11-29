@@ -2686,3 +2686,8 @@ section {
   transform: scale(1.2);
     z-index: 1;
 }
+.portfolio-item img {
+  width: 100%; /* Esto hace que la imagen ocupe el 100% del ancho del contenedor */
+  height: auto; /* Esto permite que la altura se ajuste automáticamente para mantener la proporción original */
+  display: block; /* Esto elimina cualquier espacio adicional debajo de la imagen */
+}
